@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdaptiveSun" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="hOc-QN-3o3">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WiI-RF-XFb">
+                                <rect key="frame" x="0.0" y="0.0" width="333.5" height="375"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sun" translatesAutoresizingMaskIntoConstraints="NO" id="Jvy-g3-OCc">
+                                        <rect key="frame" x="49.5" y="56" width="233.5" height="262"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Jvy-g3-OCc" firstAttribute="width" secondItem="WiI-RF-XFb" secondAttribute="width" multiplier="0.7" id="KHl-5u-yXp"/>
+                                    <constraint firstItem="Jvy-g3-OCc" firstAttribute="centerY" secondItem="WiI-RF-XFb" secondAttribute="centerY" id="UGt-nC-bha"/>
+                                    <constraint firstItem="Jvy-g3-OCc" firstAttribute="centerX" secondItem="WiI-RF-XFb" secondAttribute="centerX" id="lvK-x6-sa8"/>
+                                    <constraint firstItem="Jvy-g3-OCc" firstAttribute="height" secondItem="WiI-RF-XFb" secondAttribute="height" multiplier="0.7" id="vNu-6u-Wye"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="epL-xh-sdy">
+                                <rect key="frame" x="333.5" y="0.0" width="333.5" height="375"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5i-mS-3bn">
+                                        <rect key="frame" x="0.0" y="0.0" width="333.5" height="187.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUNNY" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Ml2-Hf-1vb">
+                                                <rect key="frame" x="0.0" y="0.0" width="333.5" height="187.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="400"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Ml2-Hf-1vb" firstAttribute="leading" secondItem="E5i-mS-3bn" secondAttribute="leading" id="0XQ-0o-TYy"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ml2-Hf-1vb" secondAttribute="trailing" id="0ow-pC-sde"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ml2-Hf-1vb" secondAttribute="bottom" id="3hM-xa-lat"/>
+                                            <constraint firstItem="Ml2-Hf-1vb" firstAttribute="top" secondItem="E5i-mS-3bn" secondAttribute="top" id="h4y-JH-K5q"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ml2-Hf-1vb" secondAttribute="trailing" id="iAW-aZ-oWQ"/>
+                                            <constraint firstItem="Ml2-Hf-1vb" firstAttribute="leading" secondItem="E5i-mS-3bn" secondAttribute="leading" id="k4g-Ri-PRq"/>
+                                            <constraint firstItem="Ml2-Hf-1vb" firstAttribute="top" secondItem="E5i-mS-3bn" secondAttribute="top" id="mp4-UQ-40Y"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ml2-Hf-1vb" secondAttribute="bottom" id="pFk-fg-Dqe"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="0ow-pC-sde"/>
+                                                <exclude reference="k4g-Ri-PRq"/>
+                                                <exclude reference="mp4-UQ-40Y"/>
+                                                <exclude reference="pFk-fg-Dqe"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="0ow-pC-sde"/>
+                                                <include reference="k4g-Ri-PRq"/>
+                                                <include reference="mp4-UQ-40Y"/>
+                                                <include reference="pFk-fg-Dqe"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TuE-OQ-pfU">
+                                        <rect key="frame" x="0.0" y="187.5" width="333.5" height="187.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KaH-0A-Kxy">
+                                                <rect key="frame" x="0.0" y="0.0" width="333.5" height="187.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBp-Q9-xY3">
+                                                        <rect key="frame" x="0.0" y="34" width="104.5" height="120"/>
+                                                        <state key="normal" image="Pikachu"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ot-U1-RJk">
+                                                        <rect key="frame" x="114.5" y="30" width="104.5" height="128"/>
+                                                        <state key="normal" image="PokeMetal"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypw-k3-HEh">
+                                                        <rect key="frame" x="229" y="30" width="104.5" height="128"/>
+                                                        <state key="normal" image="Dratini"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="KaH-0A-Kxy" secondAttribute="trailing" id="IKz-D8-KHr"/>
+                                            <constraint firstItem="KaH-0A-Kxy" firstAttribute="top" secondItem="TuE-OQ-pfU" secondAttribute="top" id="OaC-KJ-giD"/>
+                                            <constraint firstAttribute="bottom" secondItem="KaH-0A-Kxy" secondAttribute="bottom" id="U9P-En-FxJ"/>
+                                            <constraint firstItem="KaH-0A-Kxy" firstAttribute="leading" secondItem="TuE-OQ-pfU" secondAttribute="leading" id="bkG-kd-VEI"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="TuE-OQ-pfU" firstAttribute="height" secondItem="epL-xh-sdy" secondAttribute="height" multiplier="0.5" id="4F3-AZ-QRh"/>
+                                    <constraint firstItem="E5i-mS-3bn" firstAttribute="top" secondItem="epL-xh-sdy" secondAttribute="top" id="5af-KP-zwy"/>
+                                    <constraint firstItem="TuE-OQ-pfU" firstAttribute="leading" secondItem="epL-xh-sdy" secondAttribute="leading" id="ByM-hn-bXd"/>
+                                    <constraint firstAttribute="trailing" secondItem="TuE-OQ-pfU" secondAttribute="trailing" id="PFo-7I-RZZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="TuE-OQ-pfU" secondAttribute="bottom" id="Put-2j-PCh"/>
+                                    <constraint firstItem="E5i-mS-3bn" firstAttribute="leading" secondItem="epL-xh-sdy" secondAttribute="leading" id="SGf-0r-P5a"/>
+                                    <constraint firstItem="E5i-mS-3bn" firstAttribute="height" secondItem="epL-xh-sdy" secondAttribute="height" multiplier="0.5" id="Ydt-nc-LUu"/>
+                                    <constraint firstAttribute="trailing" secondItem="E5i-mS-3bn" secondAttribute="trailing" id="k4q-ed-zR6"/>
+                                    <constraint firstItem="E5i-mS-3bn" firstAttribute="leading" secondItem="epL-xh-sdy" secondAttribute="leading" id="mb0-SI-AEd"/>
+                                    <constraint firstItem="E5i-mS-3bn" firstAttribute="top" secondItem="epL-xh-sdy" secondAttribute="top" id="v1q-1I-u3f"/>
+                                    <constraint firstAttribute="trailing" secondItem="E5i-mS-3bn" secondAttribute="trailing" id="zVg-Jk-YvT"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="SGf-0r-P5a"/>
+                                        <exclude reference="v1q-1I-u3f"/>
+                                        <exclude reference="zVg-Jk-YvT"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="5af-KP-zwy"/>
+                                        <include reference="SGf-0r-P5a"/>
+                                        <exclude reference="k4q-ed-zR6"/>
+                                        <exclude reference="mb0-SI-AEd"/>
+                                        <include reference="v1q-1I-u3f"/>
+                                        <include reference="zVg-Jk-YvT"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="epL-xh-sdy" secondAttribute="bottom" id="03n-5c-OFG"/>
+                            <constraint firstAttribute="trailing" secondItem="hOc-QN-3o3" secondAttribute="trailing" id="4rI-ky-Fmc"/>
+                            <constraint firstItem="hOc-QN-3o3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="529-4J-nS8"/>
+                            <constraint firstItem="epL-xh-sdy" firstAttribute="height" secondItem="hOc-QN-3o3" secondAttribute="height" multiplier="0.5" id="8ex-fQ-2GD"/>
+                            <constraint firstAttribute="trailing" secondItem="WiI-RF-XFb" secondAttribute="trailing" id="CLJ-y1-aP4"/>
+                            <constraint firstItem="WiI-RF-XFb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="GG1-QG-GHT"/>
+                            <constraint firstItem="epL-xh-sdy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Lzh-Xa-OsG"/>
+                            <constraint firstItem="WiI-RF-XFb" firstAttribute="height" secondItem="hOc-QN-3o3" secondAttribute="height" multiplier="0.5" id="MC7-o5-S6Q"/>
+                            <constraint firstAttribute="trailing" secondItem="epL-xh-sdy" secondAttribute="trailing" id="Pbc-iH-8bo"/>
+                            <constraint firstItem="epL-xh-sdy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="Qre-UF-XgR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="epL-xh-sdy" secondAttribute="bottom" id="X8e-R0-D9k"/>
+                            <constraint firstItem="WiI-RF-XFb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="aRM-ds-46h"/>
+                            <constraint firstItem="WiI-RF-XFb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eyK-Yk-z6b"/>
+                            <constraint firstAttribute="trailing" secondItem="epL-xh-sdy" secondAttribute="trailing" id="gdH-od-YFY"/>
+                            <constraint firstItem="WiI-RF-XFb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="kNw-at-Zmb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WiI-RF-XFb" secondAttribute="bottom" id="n0x-lV-fZ6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hOc-QN-3o3" secondAttribute="bottom" id="puw-dp-KdD"/>
+                            <constraint firstItem="hOc-QN-3o3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qad-me-d17"/>
+                            <constraint firstItem="WiI-RF-XFb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qiX-GH-Ccr"/>
+                            <constraint firstItem="epL-xh-sdy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="xCW-ue-fB4"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="GG1-QG-GHT"/>
+                                <exclude reference="kNw-at-Zmb"/>
+                                <exclude reference="qiX-GH-Ccr"/>
+                                <exclude reference="Qre-UF-XgR"/>
+                                <exclude reference="gdH-od-YFY"/>
+                                <exclude reference="xCW-ue-fB4"/>
+                                <exclude reference="X8e-R0-D9k"/>
+                                <exclude reference="n0x-lV-fZ6"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="CLJ-y1-aP4"/>
+                                <include reference="GG1-QG-GHT"/>
+                                <exclude reference="MC7-o5-S6Q"/>
+                                <exclude reference="aRM-ds-46h"/>
+                                <exclude reference="eyK-Yk-z6b"/>
+                                <include reference="kNw-at-Zmb"/>
+                                <include reference="qiX-GH-Ccr"/>
+                                <exclude reference="8ex-fQ-2GD"/>
+                                <exclude reference="Lzh-Xa-OsG"/>
+                                <exclude reference="Pbc-iH-8bo"/>
+                                <include reference="Qre-UF-XgR"/>
+                                <include reference="gdH-od-YFY"/>
+                                <include reference="xCW-ue-fB4"/>
+                                <exclude reference="03n-5c-OFG"/>
+                                <include reference="X8e-R0-D9k"/>
+                                <include reference="n0x-lV-fZ6"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Dratini" width="128" height="128"/>
+        <image name="Pikachu" width="128" height="120"/>
+        <image name="PokeMetal" width="128" height="128"/>
+        <image name="Sun" width="518" height="505"/>
+        <image name="background" width="1280" height="480"/>
+    </resources>
+</document>
